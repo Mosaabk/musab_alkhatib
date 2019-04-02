@@ -30,3 +30,31 @@ a img {
     width: 5vw;
     height: 5vh;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p:first-letter {
+    font-size: 150%;
+}
+
+dt{
+    font-weight: bold;
+    color: yellow;
+
+}
+
+
+ol {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+li {
+    flex: 0 0 auto;
+}
