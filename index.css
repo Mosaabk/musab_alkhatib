@@ -1,0 +1,9 @@
+body{
+    margin: auto;
+    max-width: 40%;
+}
+
+#myImg{
+    height: 300px;
+    width: 40%;
+}
