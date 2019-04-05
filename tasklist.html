@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task List</title>
+    <link href="css/task.css" type="text/css" rel="stylesheet" >
+</head>
+<body>
+<h1>Task List</h1>
+<form id="myForm">
+    <label for="taskName">Task</label>
+    <input id="taskName" type="text" name="task" placeholder="Breakfast at Tiffany's"/>
+    <label for="requiredBy">Required By</label>
+    <input type="date" id="requiredBy" name="requiredBy"/>
+    <label for="cat">Category</label>
+    <select id="cat" name="categrory">
+        <option>Personal</option>
+        <option>Work</option>
+    </select>
+    <input type="submit" value="Save Task"/>
+    <input type="reset" value="Clear Task"/>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Category</th>
+        </tr>
+
+        <tr>
+            <td>Return Library Books</td>
+            <td>2013-10-4</td>
+            <td>Personal</td>
+
+        </tr>
+        <tr>
+            <td>Perform demo project for stakeholders</td>
+            <td>2013-10-4</td>
+            <td>Work</td>
+        </tr>
+        <tr>
+            <td>Meet friends for dinner</td>
+            <td>2013-10-4</td>
+            <td>Personal</td>
+        </tr>
+    </table>
+
+    <input type="submit" value="Add Task">
+
+</form>
+
+<div id="footer">
+    <p>You have 3 tasks</p>
+
+</div>
+
+</body>
+</html>
