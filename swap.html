@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swap</title>
+    <link rel="stylesheet" href="css/swap.css">
+
+</head>
+<body>
+<span id="happySpan">Happy: </span><img  id="happy" alt="happy" src="img/happy.jpg">
+<span id="sadSpan">Sad: </span> <img id="sad" alt="sad" src="img/sad.jpg">
+<button onclick="swap();">Swap me</button>
+<script>
+
+    function swap(){
+        const img1 = document.getElementById("happy");
+        const img2 = document.getElementById("sad");
+
+        const tmp = img1.src;
+        img1.src = img2.src;
+        img2.src = tmp;
+
+
+        const happy  = document.getElementById("happySpan");
+        const sad    = document.getElementById("sadSpan");
+        const tmpSpan = document.getElementById("happySpan").innerText;
+        happy.innerText = document.getElementById("sadSpan").innerText;
+        sad.innerText = tmpSpan;
+
+    }
+</script>
+</body>
+</html>
