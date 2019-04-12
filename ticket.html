@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" type="text/css" href="css/ticket.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+            integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
+            crossorigin="anonymous"></script>
+    <script src="js/ticket.js"></script>
+</head>
+<body>
+
+
+<form>
+    <div id="warning"></div>
+
+    <div>
+        <label>
+            Name :
+            <input required type="text">
+        </label>
+    </div>
+
+    <div>
+        <label>
+            Street:
+            <input required type="text">
+        </label>
+
+    </div>
+    <div>
+        <label>State</label>
+        <select required>
+            <option>IA</option>
+            <option>NC</option>
+            <option>IL</option>
+        </select>
+    </div>
+
+    <div>
+        <label>
+            Zip Code:
+            <input id="zip" required pattern="\d{5}" title="Zip must be 5 digits!" type="text">
+        </label>
+    </div>
+
+
+    <div>
+        <label>How many seats ?
+            <input id="seats" type="text">
+        </label>
+    </div>
+
+
+
+
+    <fieldset>
+        <legend>What taxi do you require? </legend>
+
+        <input type="radio" name="taxi" value="Car">
+        <input type="radio" name="taxi" value="Van">
+        <input type="radio" name="taxi" value="Tuk Tuk">
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Extras: </legend>
+        <label><input type="checkbox" value="baby seat"> Baby Seat</label>
+        <label><input type="checkbox" value="wheel chair access"> Wheel Chair Access</label>
+        <label><input type="checkbox" value="stock tip">Stock Tip</label>
+
+
+    </fieldset>
+
+    <div>
+        <label>Special Instruction: </label>
+        <textarea cols="30" rows="4"></textarea>
+    </div>
+
+
+    <div>
+        <input id="submit" type="submit" value="Submit Booking">
+    </div>
+
+</form>
+
+</body>
+</html>
