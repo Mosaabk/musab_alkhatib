@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mytest</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+            integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" rel="script" src="../../js/test.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../css/test.css" >
+
+</head>
+<body>
+
+<div id="warning">
+
+
+</div>
+<form>
+    <label> Name </label>
+    <input type="text" name="name" id="name" required/>
+    <br>
+
+    <label> Street </label>
+    <input type="text" name="street" id="street" required/>
+    <br>
+
+
+    <label> State </label>
+    <select name="state">
+        <option>IA</option>
+        <option>NY</option>
+    </select>
+    <br>
+
+
+    <label> Zip Code </label>
+    <input type="text" name="zipcode"required />
+    <br>
+
+
+    <label> How many seats? </label>
+    <input type="text" name="seat" required/>
+    <br>
+
+
+    <fieldset>
+        <legend>Which taxi do require ? </legend>
+
+        <input type="radio" name="taxi" value="Car" required/> Car
+        <input type="radio" name="taxi" value="Van" required/> Van
+        <input type="radio" name="taxi" value="Tuk Tuck" required/> Tuk Tuk
+    </fieldset>
+    <br>
+
+
+    <fieldset>
+        <legend>Extras</legend>
+        <input type="checkbox" name="Extras" value="Baby Seat" /> Baby Seat
+        <input type="checkbox" name="Extras" value="Wheelchair Access" /> Wheelchair Access
+        <input type="checkbox" name="Extras" value="Stock Tip" /> Stock Tip
+    </fieldset>
+    <br>
+
+
+    <label>Special Instruction</label>
+    <textarea></textarea>
+    <br>
+
+    <input type="submit" value="Submit Booking" />
+</form>
+
+
+
+</body>
+</html>

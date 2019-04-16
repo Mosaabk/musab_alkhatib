@@ -1,0 +1,42 @@
+h1{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+span {
+    text-align: center;
+}
+
+
+img {
+    width: 10vw;
+    height: 10vh;
+    visibility: hidden;
+}
+
+#div1,#div2{
+display: inline-block;
+}
+
+#div1{
+    border: 1px solid red;
+    width: 200px;
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: content-box;
+}
+
+#div2{
+    border: 1px solid blue;
+    width: 200px;
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+div p {
+    color: red;
+}
